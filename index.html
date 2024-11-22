@@ -3,24 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site</title>
+    <title>Mon Site de Design</title>
+    <!-- Lien vers Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Lien vers ton fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <h1>Mon Site</h1>
-            <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#collection">Collection</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Section principale ou bannière -->
+    <header class="hero">
+        <h1>Bienvenue chez Design Intérieur</h1>
+        <p>Des créations uniques pour sublimer vos espaces.</p>
     </header>
-    <section class="hero">
-        <h1>Bienvenue sur mon site</h1>
-        <p>Découvrez le design intérieur de vos rêves.</p>
+
+    <!-- Section Collection -->
+    <section class="collection" id="collection">
+        <h2>Notre Collection</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200" alt="Produit 1">
+                <p>Produit 1 - Une description courte</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200" alt="Produit 2">
+                <p>Produit 2 - Une description courte</p>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200" alt="Produit 3">
+                <p>Produit 3 - Une description courte</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about" id="about">
+        <h2>À propos de nous</h2>
+        <p>Notre passion pour le design d'intérieur se traduit par des pièces uniques et élégantes, pensées pour sublimer chaque espace.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
     </section>
 </body>
 </html>
